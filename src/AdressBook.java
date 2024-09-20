@@ -1,3 +1,4 @@
+import java.lang.foreign.PaddingLayout;
 import java.util.*;
 public class AdressBook{
     private ArrayList<BuddyInfo> buddyInfos;
@@ -15,7 +16,10 @@ public class AdressBook{
     }
 
     public static void main(String[] args) {
-        System.out.println("Adress Book");
+        BuddyInfo buddy = new BuddyInfo("Tom","Carleton","613");
+        AdressBook adressBook = new AdressBook();
+        adressBook.add(buddy);
+        adressBook.remove(buddy);
 
     }
 }
