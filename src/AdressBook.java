@@ -8,7 +8,9 @@ public class AdressBook{
     }
 
     public void add(BuddyInfo buddy) {
-        buddyInfos.add(buddy);
+        if (buddy!=null){
+            buddyInfos.add(buddy);
+        }
     }
     public void remove(BuddyInfo buddy) {
         buddyInfos.remove(buddy);
